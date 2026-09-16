@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #436ebe;
+  --color-brand-hover: #375ca3;
+  --color-brand-light: #f0f4fa;
+  --color-brand-border: #c8d6ee;
+}
+
+@layer utilities {
+  .bg-anixi {
+    background-color: #436ebe;
+  }
+  .bg-anixi-hover:hover {
+    background-color: #375ca3;
+  }
+  .text-anixi {
+    color: #436ebe;
+  }
+  .border-anixi {
+    border-color: #436ebe;
+  }
+  .shadow-anixi {
+    box-shadow: 0 10px 25px -5px rgba(67, 110, 190, 0.25);
+  }
+}

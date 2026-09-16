@@ -1,0 +1,8 @@
+{
+  "name": "Anixi Au Pair Application Form",
+  "description": "Custom multi-step au pair application form for Anixi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

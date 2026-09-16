@@ -1,0 +1,36 @@
+<svg width="300" height="240" viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="anixiWaterDropGrad" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="45%" stop-color="#436ebe" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="anixiWaterDropHighlight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Central Upward Petal Outline -->
+  <path d="M 150 12 C 198 60 210 125 150 158 C 90 125 102 60 150 12 Z" fill="#0f172a" />
+
+  <!-- Inner Cutout inside Central Petal -->
+  <path d="M 150 38 C 182 76 188 120 150 144 C 112 120 118 76 150 38 Z" fill="#ffffff" />
+
+  <!-- Glossy Blue Water Drop -->
+  <path d="M 150 50 C 176 84 180 118 150 138 C 120 118 124 84 150 50 Z" fill="url(#anixiWaterDropGrad)" />
+
+  <!-- Droplet Light Highlight -->
+  <ellipse cx="143" cy="85" rx="7" ry="15" transform="rotate(-22 143 85)" fill="url(#anixiWaterDropHighlight)" />
+
+  <!-- Left Side Leaf -->
+  <path d="M 126 122 C 72 92 42 118 48 152 C 78 182 126 152 136 134 Z" fill="#0f172a" />
+  <path d="M 126 122 Q 84 140 48 152" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Right Side Leaf -->
+  <path d="M 174 122 C 228 92 258 118 252 152 C 222 182 174 152 164 134 Z" fill="#0f172a" />
+  <path d="M 174 122 Q 216 140 252 152" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Base Arch -->
+  <path d="M 112 150 Q 150 178 188 150 C 168 168 132 168 112 150 Z" fill="#0f172a" />
+</svg>
