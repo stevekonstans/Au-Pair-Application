@@ -28,7 +28,7 @@ export async function onRequest(context) {
 }
 
 export async function onRequestPost(context) {
-  const { request, env } = context;
+  const { request, env = {} } = context;
 
   try {
     const data = await request.json();
@@ -45,6 +45,9 @@ export async function onRequestPost(context) {
     }
 
     const applicationId = data.applicationId || `ANX-${Date.now().toString(36).toUpperCase()}`;
+
+    // Diagnostic information: list which environment keys exist (without exposing secret values)
+    const availableEnvKeys = Object.keys(env);
 
     // 1. Save to Microsoft OneDrive (Excel) via Microsoft Graph API
     let msGraphSuccess = false;
@@ -209,6 +212,7 @@ export async function onRequestPost(context) {
         emailStatus,
         adminEmail: adminEmailSuccess ? 'Sent' : adminEmailError,
         applicantEmail: applicantEmailSuccess ? 'Sent' : applicantEmailError,
+        diagnosticEnvKeys: availableEnvKeys,
       }),
       {
         status: 200,
